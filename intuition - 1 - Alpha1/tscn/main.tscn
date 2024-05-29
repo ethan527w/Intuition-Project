@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqf4wctdugejj"]
+
+[ext_resource type="PackedScene" uid="uid://dtok74cnus8b6" path="res://tscn/question.tscn" id="1_xslyc"]
+[ext_resource type="PackedScene" uid="uid://dx7chfmgtfmpb" path="res://tscn/drop_area.tscn" id="2_fm5t5"]
+[ext_resource type="Texture2D" uid="uid://cum72e2yp6ps5" path="res://asprite/tooltexture.png" id="3_nlwa0"]
+[ext_resource type="PackedScene" uid="uid://dq8jtkemii0xr" path="res://tscn/trash_bin.tscn" id="4_8i62g"]
+
+[node name="main" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [69.0]
+
+[node name="Tooltexture" type="Sprite2D" parent="."]
+position = Vector2(183.361, 323)
+scale = Vector2(1.51633, 1.5336)
+texture = ExtResource("3_nlwa0")
+
+[node name="drop area" parent="." instance=ExtResource("2_fm5t5")]
+position = Vector2(948, 575)
+
+[node name="question" parent="." instance=ExtResource("1_xslyc")]
+position = Vector2(771, 128)
+
+[node name="trashBin" parent="." instance=ExtResource("4_8i62g")]
+position = Vector2(519, 591)
+scale = Vector2(1.56769, 1.77585)
